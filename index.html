@@ -3,1922 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="3 Bladez supports search and rescue teams with advanced drone technology. Support services do not perform services. Instead, the support services provide the technology that helps first responders.">
-    <meta name="keywords" content="drone services, search and rescue, first responder technology, emergency response, UAV, drone technology">
-    <meta name="author" content="3 Blades">
+    <meta name="description" content="3 Bladez provides modern drone technology support for search and rescue teams with aerial mapping, thermal visibility, and mission documentation.">
+    <meta name="keywords" content="drone support, search and rescue, UAV, aerial mapping, thermal imaging, first responder technology">
+    <meta name="author" content="3 Bladez">
     <meta name="robots" content="index,follow">
-    <meta name="theme-color" content="#007bff">
-    <link rel="canonical" href="https://3blades.com/">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
+    <meta name="theme-color" content="#0f2742">
+    <link rel="canonical" href="https://3bladez.com/">
+
     <meta property="og:type" content="website">
-    <meta property="og:title" content="3 Blades | Search & Rescue Drone Services">
-    <meta property="og:description" content="Support services do not perform services. Instead, the support services provide the technology that helps first responders.">
-    <meta property="og:url" content="https://3blades.com/">
-    <meta property="og:site_name" content="3 Blades">
-    
-    <!-- Twitter Card Meta Tags -->
+    <meta property="og:title" content="3 Bladez | Search & Rescue Drone Support">
+    <meta property="og:description" content="Independent drone technology support for SAR teams with transparent compliance, better aerial visibility, and modern mission presentation.">
+    <meta property="og:url" content="https://3bladez.com/">
+    <meta property="og:site_name" content="3 Bladez">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="3 Blades | Search & Rescue Drone Services">
-    <meta name="twitter:description" content="Support services do not perform services. Instead, the support services provide the technology that helps first responders.">
-    
-    <title>3 Blades | Search & Rescue Drone Services</title>
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Google Fonts - Modern Sans-Serif -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta name="twitter:title" content="3 Bladez | Search & Rescue Drone Support">
+    <meta name="twitter:description" content="Independent drone technology support for SAR teams with transparent compliance, better aerial visibility, and modern mission presentation.">
 
-        body {
-            font-family: 'Poppins', 'Inter', sans-serif;
-            line-height: 1.7;
-            color: #1a1a1a;
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-        }
-
-        :root {
-            --primary-color: #0066cc;
-            --secondary-color: #00a8cc;
-            --accent-color: #ff6b35;
-            --dark-color: #1a1a1a;
-            --light-color: #f5f7fa;
-            --text-color: #333333;
-            --text-light: #666666;
-            --success-color: #28a745;
-            --danger-color: #dc3545;
-            --spacing-unit: 8px;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 10px;
-            background: #000;
-            color: #fff;
-            padding: 8px 12px;
-            z-index: 2000;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-
-        .skip-link:focus {
-            top: 10px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header and Navigation */
-        #header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar {
-            padding: 1rem 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #007bff;
-        }
-
-        .logo i {
-            margin-right: 0.5rem;
-            font-size: 2rem;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-        }
-
-        .nav-link:hover {
-            color: #007bff;
-        }
-
-        .nav-link:focus-visible,
-        .btn-primary:focus-visible,
-        .btn-secondary:focus-visible,
-        .hamburger:focus-visible,
-        .form-group input:focus-visible,
-        .form-group select:focus-visible,
-        .form-group textarea:focus-visible,
-        button:focus-visible,
-        a:focus-visible {
-            outline: 3px solid #0b5fff;
-            outline-offset: 2px;
-        }
-
-        .emergency-btn {
-            background: #dc3545 !important;
-            color: white !important;
-            font-weight: 600;
-            animation: pulse 2s infinite;
-        }
-
-        .emergency-btn:hover {
-            background: #c82333 !important;
-            color: white !important;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-        }
-
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background: #333;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-
-        /* Hero Section - Full Viewport with Bold Typography */
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 168, 204, 0.9) 100%),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23003d7a" width="1200" height="800"/></svg>');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 40px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 8vw, 5.5rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            text-transform: none;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .hero p {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            margin-bottom: 2.5rem;
-            opacity: 0.95;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 400;
-            line-height: 1.6;
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            animation: fadeInUp 1s ease-out 0.4s both;
-        }
-
-        /* Scroll Indicator */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2s infinite;
-            cursor: pointer;
-            z-index: 3;
-        }
-
-        .scroll-indicator i {
-            font-size: 2rem;
-            color: white;
-            opacity: 0.8;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateX(-50%) translateY(0);
-            }
-            40% {
-                transform: translateX(-50%) translateY(-10px);
-            }
-            60% {
-                transform: translateX(-50%) translateY(-5px);
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "3 Bladez",
+            "url": "https://3bladez.com/",
+            "description": "Independent drone technology support provider for search and rescue organizations.",
+            "telephone": "+1-800-325-2337",
+            "email": "operations@3bladez.com",
+            "areaServed": "United States",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "telephone": "+1-800-325-2337",
+                "email": "operations@3bladez.com",
+                "availableLanguage": "English"
             }
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-image {
-            display: none;
-        }
-
-        .btn-primary, .btn-secondary {
-            padding: 16px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-block;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .btn-primary {
-            background: var(--accent-color);
-            color: white;
-            border: 2px solid var(--accent-color);
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: #ff5722;
-            border-color: #ff5722;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        /* Core Values/Services Section - Card-Based Layout */
-        .services {
-            padding: 100px 0;
-            background: var(--light-color);
-        }
-
-        .services h2 {
-            text-align: center;
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: clamp(1rem, 2vw, 1.3rem);
-            color: var(--text-light);
-            margin-bottom: 4rem;
-            font-weight: 400;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-
-        .service-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            position: relative;
-        }
-
-        .service-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-card-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.1);
-            transition: opacity 0.3s ease;
-        }
-
-        .service-card:hover .service-card-image::after {
-            opacity: 0;
-        }
-
-        .service-card i {
-            font-size: 4rem;
-            color: white;
-            z-index: 1;
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover i {
-            transform: scale(1.1);
-        }
-
-        .service-card-content {
-            padding: 2rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-            font-weight: 700;
-        }
-
-        .service-card p {
-            margin-bottom: 1.5rem;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-
-        .service-card ul {
-            list-style: none;
-            text-align: left;
-        }
-
-        .service-card ul li {
-            padding: 0.3rem 0;
-            color: #555;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .service-card ul li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #28a745;
-            font-weight: bold;
-        }
-
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #333;
-        }
-
-        .about h3 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem;
-            color: #007bff;
-        }
-
-        .about p {
-            margin-bottom: 1.5rem;
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .stat {
-            text-align: center;
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 10px;
-        }
-
-        .stat h3 {
-            font-size: 2.5rem;
-            color: #007bff;
-            margin: 0;
-        }
-
-        .stat p {
-            margin: 0;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .certifications {
-            list-style: none;
-        }
-
-        .certifications li {
-            padding: 0.5rem 0;
-            color: #555;
-        }
-
-        .certifications i {
-            color: #28a745;
-            margin-right: 0.5rem;
-        }
-
-        .about-image {
-            text-align: center;
-        }
-
-        .about-icon {
-            font-size: 150px;
-            color: #28a745;
-        }
-
-        /* Future Technology Section */
-        .future-tech {
-            padding: 100px 0;
-            background: var(--light-color);
-        }
-
-        .future-tech h2 {
-            text-align: center;
-            font-size: clamp(2.2rem, 5vw, 3.2rem);
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        .future-intro {
-            max-width: 900px;
-            margin: 0 auto 2rem;
-            color: var(--text-color);
-            font-size: 1.1rem;
-            text-align: center;
-        }
-
-        .support-message {
-            max-width: 950px;
-            margin: 0 auto 2.5rem;
-            padding: 1rem 1.25rem;
-            border-left: 4px solid var(--primary-color);
-            background: rgba(0, 102, 204, 0.08);
-            color: var(--text-color);
-            font-weight: 600;
-        }
-
-        .future-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .future-card {
-            background: white;
-            border-radius: 14px;
-            padding: 1.5rem;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        }
-
-        .future-card h3 {
-            margin-bottom: 0.8rem;
-            color: var(--primary-color);
-            font-size: 1.25rem;
-        }
-
-        .future-card ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .future-card li {
-            position: relative;
-            padding-left: 1rem;
-            margin-bottom: 0.6rem;
-            color: var(--text-light);
-        }
-
-        .future-card li::before {
-            content: '\2022';
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: 700;
-        }
-
-        .impact-list {
-            list-style: none;
-            margin: 0 0 1.5rem;
-            padding: 0;
-        }
-
-        .impact-list li {
-            margin-bottom: 0.7rem;
-            color: var(--text-color);
-            font-weight: 500;
-        }
-
-        .future-close {
-            background: white;
-            border-radius: 12px;
-            padding: 1.25rem;
-            color: var(--text-color);
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            padding: 100px 0;
-            background: white;
-            position: relative;
-        }
-
-        .testimonials h2 {
-            text-align: center;
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        .testimonials-container {
-            max-width: 1000px;
-            margin: 4rem auto 0;
-            position: relative;
-        }
-
-        .testimonial-card {
-            background: var(--light-color);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .testimonial-card.active {
-            opacity: 1;
-        }
-
-        .testimonial-photo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 0 auto 1.5rem;
-            overflow: hidden;
-            border: 4px solid white;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .testimonial-photo i {
-            font-size: 3rem;
-            color: white;
-        }
-
-        .testimonial-quote {
-            font-size: 1.3rem;
-            line-height: 1.8;
-            color: var(--text-color);
-            margin-bottom: 2rem;
-            font-style: italic;
-            position: relative;
-        }
-
-        .testimonial-quote::before {
-            content: '"';
-            font-size: 4rem;
-            color: var(--primary-color);
-            opacity: 0.2;
-            position: absolute;
-            top: -20px;
-            left: -10px;
-        }
-
-        .testimonial-author {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--dark-color);
-            margin-bottom: 0.3rem;
-        }
-
-        .testimonial-role {
-            font-size: 1rem;
-            color: var(--text-light);
-        }
-
-        .testimonial-company {
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-
-        .testimonial-controls {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .testimonial-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ccc;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .testimonial-dot.active {
-            background: var(--primary-color);
-            width: 30px;
-            border-radius: 6px;
-        }
-
-        .testimonial-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: white;
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-        }
-
-        .testimonial-nav:hover {
-            background: var(--primary-color);
-            color: white;
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        .testimonial-nav.prev {
-            left: -70px;
-        }
-
-        .testimonial-nav.next {
-            right: -70px;
-        }
-
-        .contact h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .emergency-contact {
-            background: #dc3545;
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .emergency-contact h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .emergency-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin: 1rem 0;
-        }
-
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            background: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-item i {
-            font-size: 1.5rem;
-            color: #007bff;
-            min-width: 30px;
-        }
-
-        .contact-item h4 {
-            margin: 0 0 0.5rem 0;
-            color: #333;
-        }
-
-        .contact-item p {
-            margin: 0;
-            color: #666;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #007bff;
-        }
-
-        .form-group select[name="urgency"] {
-            background: white;
-        }
-
-        .form-group select[name="urgency"] option[value="emergency"] {
-            background: #ffebee;
-            color: #d32f2f;
-        }
-
-        /* Footer */
-        .footer {
-            background: #333;
-            color: white;
-            padding: 3rem 0 1rem;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-logo {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer-logo i {
-            font-size: 2rem;
-            color: #007bff;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-logo span {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links h4 {
-            margin-bottom: 1rem;
-            color: #007bff;
-        }
-
-        .footer-links ul {
-            list-style: none;
-        }
-
-        .footer-links ul li {
-            padding: 0.3rem 0;
-        }
-
-        .footer-links ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links ul li a:hover {
-            color: #007bff;
-        }
-
-        .footer-emergency h4 {
-            margin-bottom: 1rem;
-            color: #dc3545;
-        }
-
-        .footer-social {
-            margin-top: 1.5rem;
-        }
-
-        .footer-social h4 {
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            font-size: 1.1rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            background: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #555;
-            padding-top: 1rem;
-            text-align: center;
-            color: #ccc;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                flex-direction: column;
-                background-color: white;
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-                padding: 2rem 0;
-            }
-
-            .nav-menu.active {
-                left: 0;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .hero {
-                padding: 100px 0 50px;
-                text-align: center;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            .future-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-content {
-                grid-template-columns: 1fr;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .testimonial-nav {
-                display: none;
-            }
-
-            .scroll-indicator {
-                bottom: 20px;
-            }
-
-            .cookie-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .cookie-buttons {
-                justify-content: center;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .services h2,
-            .about h2,
-            .contact h2 {
-                font-size: 2rem;
-            }
-
-            .service-card,
-            .contact-form {
-                padding: 1.5rem;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
-        }
-    </style>
+    </script>
+
+    <title>3 Bladez | Search & Rescue Drone Support</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8sbcuQ2TtyclP+crVfLr0I4l0kQmwXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <!-- Header Section -->
-    <header id="header">
-        <nav class="navbar" aria-label="Primary">
-            <div class="nav-container">
-                <div class="logo">
-                    <i class="fas fa-helicopter" aria-hidden="true"></i>
-                    <span>3 Blades</span>
-                </div>
-                <ul class="nav-menu" id="primary-navigation" aria-label="Main navigation">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact" class="nav-link emergency-btn">Emergency</a></li>
-                </ul>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-controls="primary-navigation" aria-expanded="false" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+<body data-bs-spy="scroll" data-bs-target="#primary-navigation" data-bs-offset="96">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header fixed-top" id="header">
+        <nav class="navbar navbar-expand-lg" aria-label="Primary">
+            <div class="container py-2">
+                <a class="navbar-brand brand-mark" href="#home" aria-label="3 Bladez home">
+                    <span class="brand-mark__icon"><i class="fas fa-helicopter" aria-hidden="true"></i></span>
+                    <span>
+                        <strong>3 Bladez</strong>
+                        <small>SAR Drone Support</small>
+                    </span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="primary-navigation">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#services">Capabilities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trust">Trust</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#future-tech">R&amp;D</a></li>
+                        <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="#contact">Verify Credentials</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main id="main-content" tabindex="-1">
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Saving Lives Through Advanced Drone Technology</h1>
-            <p>When every second counts, 3 Blades delivers mission-ready drone technology for search and rescue operations. Support services do not perform services. Instead, the support services provide the technology that helps first responders.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Request Emergency Support</a>
-                <a href="#services" class="btn-secondary">Learn More</a>
-            </div>
-        </div>
-        <div class="scroll-indicator" onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'})" 
-             onkeypress="if(event.key==='Enter'||event.key===' ') document.querySelector('#services').scrollIntoView({behavior: 'smooth'})"
-             tabindex="0" role="button" aria-label="Scroll to services section">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Search & Rescue Services</h2>
-            <p class="section-subtitle">Advanced drone technology for critical missions</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-image">
-                        <i class="fas fa-search-location"></i>
-                    </div>
-                    <div class="service-card-content">
-                        <h3>Missing Person Search</h3>
-                        <p>Rapid deployment of thermal imaging drones to locate missing persons in challenging terrain and weather conditions.</p>
-                        <ul>
-                            <li>Thermal imaging cameras</li>
-                            <li>High-resolution optical sensors</li>
-                            <li>Real-time GPS tracking</li>
-                            <li>Night vision capabilities</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-image">
-                        <i class="fas fa-helicopter"></i>
-                    </div>
-                    <div class="service-card-content">
-                        <h3>Emergency Response</h3>
-                        <p>Immediate aerial assessment and support for natural disasters, accidents, and emergency situations.</p>
-                        <ul>
-                            <li>Disaster area mapping</li>
-                            <li>Live video streaming</li>
-                            <li>Emergency supply delivery</li>
-                            <li>Communication relay</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card-image">
-                        <i class="fas fa-mountain"></i>
-                    </div>
-                    <div class="service-card-content">
-                        <h3>Wilderness Rescue</h3>
-                        <p>Specialized operations in remote and difficult-to-access locations including mountains, forests, and water bodies.</p>
-                        <ul>
-                            <li>All-terrain capability</li>
-                            <li>Extended flight range</li>
-                            <li>Weather-resistant equipment</li>
-                            <li>Coordinates with ground teams</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About 3 Bladez</h2>
-                    <p>With over a decade of combined experience in emergency response and drone technology, 3 Bladez specializes in providing professional UAV services for search and rescue operations.</p>
-                    
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>500+</h3>
-                            <p>Successful Missions</p>
+        <section class="hero-section" id="home">
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="eyebrow" data-reveal>Independent support for search-and-rescue operations</span>
+                        <h1 class="hero-title" data-reveal>Modern aerial intelligence for teams that cannot afford blind spots.</h1>
+                        <p class="hero-copy" data-reveal>3 Bladez equips search and rescue organizations with thermal visibility, aerial mapping, and mission-ready documentation. We support official responders with disciplined drone operations and a presentation that reflects that seriousness.</p>
+                        <div class="hero-actions d-flex flex-wrap gap-3" data-reveal>
+                            <a class="btn btn-accent btn-lg" href="#services">Explore Capabilities</a>
+                            <a class="btn btn-outline-light btn-lg" href="#trust">See Trust Signals</a>
                         </div>
-                        <div class="stat">
-                            <h3>24/7</h3>
-                            <p>Emergency Response</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15min</h3>
-                            <p>Average Response Time</p>
+                        <div class="trust-strip" data-reveal>
+                            <span><i class="fas fa-certificate" aria-hidden="true"></i> FAA Part 107</span>
+                            <span><i class="fas fa-shield-alt" aria-hidden="true"></i> Insured Operations</span>
+                            <span><i class="fas fa-clipboard-check" aria-hidden="true"></i> Mission Logs</span>
                         </div>
                     </div>
-                    
-                    <h3>Our Mission</h3>
-                    <p>To save lives through advanced drone technology, providing rapid response capabilities that extend the reach of search and rescue teams when time is critical.</p>
-                    
-                    <h3>Certifications & Training</h3>
-                    <ul class="certifications">
-                        <li><i class="fas fa-certificate" aria-hidden="true"></i> FAA Part 107 Certified Pilots</li>
-                        <li><i class="fas fa-certificate" aria-hidden="true"></i> Search and Rescue Operations Training</li>
-                        <li><i class="fas fa-certificate" aria-hidden="true"></i> Emergency Response Certified</li>
-                        <li><i class="fas fa-certificate" aria-hidden="true"></i> Thermal Imaging Specialist</li>
-                    </ul>
-                </div>
-                
-                <div class="about-image">
-                    <i class="fas fa-users-rescue about-icon" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future Technology Section -->
-    <section id="future-tech" class="future-tech">
-        <div class="container">
-            <h2>Future Drone Technology Needs for Search &amp; Rescue</h2>
-            <p class="future-intro">Drones have already transformed SAR operations by enabling faster aerial surveys, thermal detection, and payload delivery. To maximize lives saved, the next generation of drone technology must address current limitations in endurance, autonomy, coverage, and harsh-environment performance.</p>
-            <p class="support-message">Support services do not perform services. Instead, the support services provide the technology that helps first responders.</p>
-
-            <div class="future-grid">
-                <article class="future-card">
-                    <h3>1. Advanced Autonomy &amp; AI</h3>
-                    <ul>
-                        <li>Onboard AI for real-time victim detection, fewer false positives, and intelligent search-path optimization.</li>
-                        <li>Fully autonomous missions with minimal human oversight, including GPS-denied navigation in caves, forests, and rubble.</li>
-                        <li>Swarm coordination for large-scale parallel coverage.</li>
-                    </ul>
-                </article>
-
-                <article class="future-card">
-                    <h3>2. Extended Endurance &amp; Power</h3>
-                    <ul>
-                        <li>60 to 120+ minute flight times through next-generation batteries, hybrid propulsion, and solar integration.</li>
-                        <li>Heavy-lift capability of 50 to 100+ lbs for rescue litters, medical supplies, and flotation devices.</li>
-                    </ul>
-                </article>
-
-                <article class="future-card">
-                    <h3>3. Multi-Modal Sensors &amp; Detection</h3>
-                    <ul>
-                        <li>Enhanced thermal, LiDAR, multispectral, radar, and signal-detection payloads.</li>
-                        <li>All-weather performance in low-visibility and contaminated environments.</li>
-                    </ul>
-                </article>
-
-                <article class="future-card">
-                    <h3>4. Reliable BVLOS Connectivity</h3>
-                    <ul>
-                        <li>Satellite and hybrid 5G/mesh networks for beyond-visual-line-of-sight operations.</li>
-                        <li>Real-time high-definition video and data streaming to incident commanders.</li>
-                    </ul>
-                </article>
-
-                <article class="future-card">
-                    <h3>5. Rugged, Multi-Domain Platforms</h3>
-                    <ul>
-                        <li>Weather-resistant, waterproof, and modular platform designs.</li>
-                        <li>Hybrid aerial/ground systems and specialized variants for mountain, maritime, urban, and wilderness SAR.</li>
-                    </ul>
-                </article>
-            </div>
-
-            <h3>Strategic Impact for SAR Teams</h3>
-            <ul class="impact-list">
-                <li>Dramatically reduced search times</li>
-                <li>Lower risk to ground teams</li>
-                <li>Scalable operations in remote or disaster zones</li>
-                <li>Seamless integration with Drone-as-First-Responder (DFR) programs</li>
-            </ul>
-
-            <p class="future-close">At <a href="https://3bladez.com/" target="_blank" rel="noopener noreferrer">3bladez.com</a>, we specialize in delivering cutting-edge drone solutions tailored to these future SAR requirements, helping rescue organizations adopt the most effective technology today while preparing for tomorrow's challenges.</p>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <p class="section-subtitle">Trusted by emergency services and rescue organizations</p>
-            
-            <div class="testimonials-container">
-                <button class="testimonial-nav prev" onclick="previousTestimonial()">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                
-                <div class="testimonial-card active" data-testimonial="0">
-                    <div class="testimonial-photo">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        The 3 Blades team responded within minutes of our call. Their thermal imaging drone located our missing hiker in dense forest where ground teams couldn't reach. They literally saved a life that night.
-                    </p>
-                    <div class="testimonial-author">Chief Michael Rodriguez</div>
-                    <div class="testimonial-role">
-                        Fire Chief, <span class="testimonial-company">Mountain Valley Fire Department</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card" data-testimonial="1">
-                    <div class="testimonial-photo">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        During the recent flooding, 3 Blades provided critical aerial assessment that helped us prioritize rescue operations. Their professional team and advanced equipment are unmatched.
-                    </p>
-                    <div class="testimonial-author">Sarah Chen</div>
-                    <div class="testimonial-role">
-                        Operations Director, <span class="testimonial-company">State Emergency Services</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card" data-testimonial="2">
-                    <div class="testimonial-photo">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        We've partnered with 3 Blades for over three years. Their reliability, professionalism, and cutting-edge technology make them our first call for any aerial search and rescue mission.
-                    </p>
-                    <div class="testimonial-author">Lieutenant James Patterson</div>
-                    <div class="testimonial-role">
-                        Search & Rescue Coordinator, <span class="testimonial-company">County Sheriff's Office</span>
-                    </div>
-                </div>
-
-                <button class="testimonial-nav next" onclick="nextTestimonial()">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-
-                <div class="testimonial-controls">
-                    <button class="testimonial-dot active" onclick="goToTestimonial(0)"></button>
-                    <button class="testimonial-dot" onclick="goToTestimonial(1)"></button>
-                    <button class="testimonial-dot" onclick="goToTestimonial(2)"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact 3 Bladez</h2>
-            <p class="section-subtitle">Ready to respond when you need us most</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="emergency-contact">
-                        <h3><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Emergency Line</h3>
-                        <p class="emergency-number">1-800-3BLADES</p>
-                        <p>Available 24/7 for urgent search and rescue operations</p>
-                    </div>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone" aria-hidden="true"></i>
-                            <div>
-                                <h4>Business Line</h4>
-                                <p><a href="tel:+15551234567" aria-label="Call business line at 555 123 4567">(555) 123-4567</a></p>
+                    <div class="col-lg-6">
+                        <div class="hero-visual" data-reveal>
+                            <div class="hero-visual__chrome">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@3blades.com">info@3blades.com</a></p>
+                            <div class="hero-visual__scene">
+                                <svg viewBox="0 0 760 620" role="img" aria-label="Stylized drone flying above a search and rescue terrain map">
+                                    <defs>
+                                        <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stop-color="#133558" />
+                                            <stop offset="100%" stop-color="#1f6d7a" />
+                                        </linearGradient>
+                                        <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stop-color="#d6dfd4" />
+                                            <stop offset="100%" stop-color="#97b39d" />
+                                        </linearGradient>
+                                        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                            <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0c2033" flood-opacity="0.32" />
+                                        </filter>
+                                    </defs>
+                                    <rect width="760" height="620" rx="36" fill="url(#sky)" />
+                                    <g opacity="0.22">
+                                        <path d="M0 380C111 340 184 316 296 334C389 348 477 410 560 404C642 398 692 354 760 318V620H0Z" fill="#0c2033" />
+                                        <path d="M0 424C118 396 203 377 296 388C403 402 482 452 578 450C659 448 713 414 760 388V620H0Z" fill="#102b40" />
+                                    </g>
+                                    <g transform="translate(92 228)" filter="url(#softShadow)">
+                                        <rect x="0" y="84" width="576" height="220" rx="28" fill="url(#ground)" />
+                                        <path d="M28 278L112 180L192 225L274 140L342 190L416 108L548 192" fill="none" stroke="#234c42" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M64 120H512" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="8 14" />
+                                        <path d="M78 145H526" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2" stroke-dasharray="8 14" />
+                                        <path d="M102 170H550" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="8 14" />
+                                        <g transform="translate(288 76)">
+                                            <circle r="28" fill="#ff7b3c" fill-opacity="0.25" />
+                                            <circle r="12" fill="#ff7b3c" />
+                                        </g>
+                                    </g>
+                                    <g transform="translate(382 150)" filter="url(#softShadow)">
+                                        <rect x="-58" y="-8" width="116" height="28" rx="12" fill="#d8e2ea" />
+                                        <rect x="-18" y="20" width="36" height="30" rx="10" fill="#f7fbff" />
+                                        <rect x="-162" y="8" width="96" height="10" rx="5" fill="#d8e2ea" />
+                                        <rect x="66" y="8" width="96" height="10" rx="5" fill="#d8e2ea" />
+                                        <rect x="-124" y="-36" width="10" height="96" rx="5" fill="#d8e2ea" transform="rotate(-28)" />
+                                        <rect x="114" y="-36" width="10" height="96" rx="5" fill="#d8e2ea" transform="rotate(28)" />
+                                        <circle cx="-120" cy="-48" r="24" fill="#1c2e3f" />
+                                        <circle cx="120" cy="-48" r="24" fill="#1c2e3f" />
+                                        <circle cx="-120" cy="66" r="24" fill="#1c2e3f" />
+                                        <circle cx="120" cy="66" r="24" fill="#1c2e3f" />
+                                        <circle cx="0" cy="36" r="10" fill="#1b8f8b" />
+                                    </g>
+                                </svg>
                             </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Serving the Greater Metropolitan Area<br>Response radius: 200 miles</p>
+                            <div class="floating-card floating-card--primary">
+                                <span class="floating-card__label">Live mission view</span>
+                                <strong>Thermal, map, and visual overlays in one pass</strong>
+                            </div>
+                            <div class="floating-card floating-card--secondary">
+                                <span class="floating-card__label">Operations ready</span>
+                                <strong>Designed for field teams, not brochureware</strong>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <h3 id="form-heading">Request Service</h3>
-                    <form id="contactForm" aria-labelledby="form-heading">
-                        <div class="form-group">
-                            <label for="urgency">Urgency Level: <abbr title="required" aria-label="required">*</abbr></label>
-                            <select id="urgency" name="urgency" required aria-required="true">
-                                <option value="">Select urgency level</option>
-                                <option value="emergency">Emergency - Immediate Response</option>
-                                <option value="urgent">Urgent - Within 2 hours</option>
-                                <option value="standard">Standard - Within 24 hours</option>
-                                <option value="consultation">Consultation/Planning</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name: <abbr title="required" aria-label="required">*</abbr></label>
-                                <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="organization">Organization:</label>
-                                <input type="text" id="organization" name="organization" autocomplete="organization">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone: <abbr title="required" aria-label="required">*</abbr></label>
-                                <input type="tel" id="phone" name="phone" required aria-required="true" placeholder="(555) 123-4567" autocomplete="tel">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email: <abbr title="required" aria-label="required">*</abbr></label>
-                                <input type="email" id="email" name="email" required aria-required="true" placeholder="your@email.com" autocomplete="email">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="location">Incident Location:</label>
-                            <input type="text" id="location" name="location" placeholder="Approximate address or coordinates">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mission Details: <abbr title="required" aria-label="required">*</abbr></label>
-                            <textarea id="message" name="message" rows="4" placeholder="Describe the situation, terrain, weather conditions, and any other relevant information..." required aria-required="true"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-primary">Submit Request</button>
-                    </form>
+            </div>
+        </section>
+
+        <section class="section-shell" id="services">
+            <div class="container">
+                <div class="section-heading text-center" data-reveal>
+                    <span class="eyebrow eyebrow--dark">Capabilities</span>
+                    <h2>Built for terrain, time pressure, and command clarity.</h2>
+                    <p>The platform is designed to feel dependable at first glance and useful under pressure, with every section presenting capability in a cleaner and more confident way.</p>
+                </div>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-search-location" aria-hidden="true"></i></div>
+                            <h3>Search Coverage Support</h3>
+                            <p>Thermal and optical visibility for organized search patterns across dense, remote, or low-light terrain.</p>
+                            <ul class="feature-list">
+                                <li>Thermal target spotting</li>
+                                <li>High-resolution optical review</li>
+                                <li>Georeferenced search passes</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
+                            <h3>Incident Mapping</h3>
+                            <p>Command-friendly aerial views that help teams assess terrain, hazards, access lanes, and probable search zones.</p>
+                            <ul class="feature-list">
+                                <li>Rapid aerial mapping</li>
+                                <li>Live visual context</li>
+                                <li>Documentation-ready exports</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-broadcast-tower" aria-hidden="true"></i></div>
+                            <h3>Field Coordination Support</h3>
+                            <p>Structured handoff between air support, team leads, and post-mission review so operations stay consistent.</p>
+                            <ul class="feature-list">
+                                <li>Mission logs and summaries</li>
+                                <li>Responder-friendly outputs</li>
+                                <li>Communication relay planning</li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-helicopter" aria-hidden="true"></i>
-                    <span>3 Blades</span>
-                    <p>Professional Search & Rescue Drone Services</p>
-                    
-                    <div class="footer-social">
-                        <h4>Follow Us</h4>
-                        <div class="social-links">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <section class="section-shell section-shell--contrast" id="about">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5" data-reveal>
+                        <div class="mission-panel lift-card">
+                            <span class="eyebrow eyebrow--dark">Presentation with substance</span>
+                            <h2>More premium, without losing operational seriousness.</h2>
+                            <p>The redesign shifts the site away from a generic template and toward a deliberate visual system: stronger type hierarchy, clearer spacing, quieter color decisions, and content blocks that feel credible.</p>
+                            <div class="metrics-grid">
+                                <div>
+                                    <strong>FAA</strong>
+                                    <span>Part 107 pilots</span>
+                                </div>
+                                <div>
+                                    <strong>Insured</strong>
+                                    <span>Operations posture</span>
+                                </div>
+                                <div>
+                                    <strong>Documented</strong>
+                                    <span>Mission reporting</span>
+                                </div>
+                                <div>
+                                    <strong>Responsive</strong>
+                                    <span>Bootstrap 5.3 layout</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-reveal>
+                        <div class="story-frame">
+                            <div class="story-frame__backdrop"></div>
+                            <div class="story-frame__card lift-card">
+                                <h3>What changed in the design system</h3>
+                                <div class="row g-3 mt-1">
+                                    <div class="col-md-6">
+                                        <div class="mini-card">
+                                            <i class="fas fa-layer-group" aria-hidden="true"></i>
+                                            <strong>Bootstrap foundation</strong>
+                                            <p>Bootstrap 5.3 handles layout, spacing, containers, and responsive behavior.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mini-card">
+                                            <i class="fas fa-feather-alt" aria-hidden="true"></i>
+                                            <strong>Custom visual language</strong>
+                                            <p>Purposeful typography, warmer neutrals, and cleaner shadows replace the stock feel.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mini-card">
+                                            <i class="fas fa-arrows-up-down-left-right" aria-hidden="true"></i>
+                                            <strong>Smoother motion</strong>
+                                            <p>Reveal animation, lift interactions, and a more polished hero composition improve UX.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mini-card">
+                                            <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+                                            <strong>Mobile-first behavior</strong>
+                                            <p>Each section collapses cleanly and maintains hierarchy across small screens.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+            </div>
+        </section>
+
+        <section class="section-shell" id="team">
+            <div class="container">
+                <div class="section-heading text-center" data-reveal>
+                    <span class="eyebrow eyebrow--dark">Operational Team</span>
+                    <h2>Role clarity without placeholder bios.</h2>
+                    <p>Instead of invented headshots or generic executive copy, the team section shows the functional roles that matter during onboarding and field coordination.</p>
                 </div>
-                
-                <div class="footer-emergency">
-                    <h4>Emergency Response</h4>
-                    <p class="emergency-number"><a href="#contact" aria-label="Navigate to emergency contact form">Contact Us</a></p>
-                    <p>Available 24/7</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="team-role lift-card h-100">
+                            <div class="team-role__avatar"><i class="fas fa-helicopter" aria-hidden="true"></i></div>
+                            <h3>Chief Pilot</h3>
+                            <p>Leads flight planning, airspace review, risk decisions, and Part 107 operational control.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="team-role lift-card h-100">
+                            <div class="team-role__avatar"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                            <h3>Mission Coordinator</h3>
+                            <p>Translates field needs into aerial tasking, documentation, and handoff-ready outputs.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="team-role lift-card h-100">
+                            <div class="team-role__avatar"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+                            <h3>Safety &amp; Compliance</h3>
+                            <p>Maintains insurance records, checklists, incident logs, and verification materials for partner review.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 3 Blades. All rights reserved. | Professional drone services for search and rescue operations.</p>
+        </section>
+
+        <section class="section-shell section-shell--deep" id="trust">
+            <div class="container">
+                <div class="section-heading section-heading--light text-center" data-reveal>
+                    <span class="eyebrow">Trust &amp; Compliance</span>
+                    <h2>Modern presentation backed by transparent signals.</h2>
+                    <p>This redesign keeps the trust layer visible: operational documentation, insured flights, FAA compliance, and a clear non-government disclosure.</p>
+                </div>
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-4" data-reveal>
+                        <article class="trust-card lift-card h-100">
+                            <span class="trust-card__icon"><i class="fas fa-id-badge" aria-hidden="true"></i></span>
+                            <h3>Credential Review</h3>
+                            <p>Pilot certifications, training records, and operational checklists are shared during onboarding and partner review.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4" data-reveal>
+                        <article class="trust-card lift-card h-100">
+                            <span class="trust-card__icon"><i class="fas fa-file-contract" aria-hidden="true"></i></span>
+                            <h3>Insurance Visibility</h3>
+                            <p>Commercial UAV liability coverage and credential packets are positioned as part of the process, not hidden in small print.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4" data-reveal>
+                        <article class="trust-card lift-card h-100">
+                            <span class="trust-card__icon"><i class="fas fa-route" aria-hidden="true"></i></span>
+                            <h3>Evidence-Based Output</h3>
+                            <p>Mission logs, maps, and summaries are framed as deliverables so the site looks operationally mature instead of promotional.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="disclosure-banner" data-reveal>
+                    3 Bladez is an independent drone technology provider and does not represent a government emergency agency. We support official responders with aerial intelligence and documentation.
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section-shell" id="future-tech">
+            <div class="container">
+                <div class="section-heading text-center" data-reveal>
+                    <span class="eyebrow eyebrow--dark">R&amp;D Outlook</span>
+                    <h2>Future-focused, but framed responsibly.</h2>
+                    <p>The technology roadmap remains useful, but it now lives inside a cleaner grid with more disciplined wording and presentation.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="roadmap-card lift-card h-100">
+                            <h3>Autonomy Assistance</h3>
+                            <p>Smarter onboard detection, improved navigation in GPS-limited conditions, and more useful route optimization.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="roadmap-card lift-card h-100">
+                            <h3>Endurance &amp; Payload</h3>
+                            <p>Longer-duration flight targets and mission-approved payload options that expand what support teams can stage.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="roadmap-card lift-card h-100">
+                            <h3>Sensing &amp; Visibility</h3>
+                            <p>Thermal, LiDAR, multispectral, and low-visibility sensing layers that improve aerial interpretation.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="roadmap-card lift-card h-100">
+                            <h3>Connectivity</h3>
+                            <p>Stronger beyond-visual-line-of-sight communication pathways and more reliable command-facing streaming.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="roadmap-card lift-card h-100">
+                            <h3>Rugged Platforms</h3>
+                            <p>Weather-resistant and modular platform concepts for mountainous, maritime, urban, and rural missions.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="roadmap-card roadmap-card--accent lift-card h-100">
+                            <h3>Design Intent</h3>
+                            <p>This section presents research priorities, not a claim that every capability is deployed today.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell section-shell--contact" id="contact">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6" data-reveal>
+                        <div class="section-heading section-heading--left">
+                            <span class="eyebrow eyebrow--dark">Contact &amp; Verification</span>
+                            <h2>Professional contact details, without placeholder noise.</h2>
+                            <p>The redesigned contact area keeps the experience premium while giving reviewers exactly what they need to verify the operation.</p>
+                        </div>
+                        <div class="contact-stack">
+                            <a class="contact-card lift-card" href="tel:+18003252337">
+                                <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                                <div>
+                                    <strong>1-800-325-2337</strong>
+                                    <span>Operations desk</span>
+                                </div>
+                            </a>
+                            <a class="contact-card lift-card" href="mailto:operations@3bladez.com">
+                                <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                                <div>
+                                    <strong>operations@3bladez.com</strong>
+                                    <span>Credential and intake requests</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-reveal>
+                        <div class="verification-panel lift-card">
+                            <h3>Verification packet can include</h3>
+                            <ul class="verification-list">
+                                <li>FAA Part 107 pilot confirmation</li>
+                                <li>Insurance certificate for active operations</li>
+                                <li>Mission checklist and reporting framework</li>
+                                <li>Service-area and deployment expectations</li>
+                            </ul>
+                            <p class="verification-note">Current public social channels are shared only after verification. This keeps the public footprint intentional and avoids low-credibility placeholders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    </footer>
-
-    <script>
-        // Intersection Observer for Animation on Scroll (defined early for use in DOMContentLoaded)
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Mobile Navigation Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            const menuLinks = navMenu.querySelectorAll('.nav-link');
-            const mobileMenuQuery = window.matchMedia('(max-width: 768px)');
-
-            const syncMenuAccessibility = function(isExpanded) {
-                const isMobile = mobileMenuQuery.matches;
-
-                hamburger.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
-
-                if (isMobile) {
-                    navMenu.classList.toggle('active', isExpanded);
-                    navMenu.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
-                    menuLinks.forEach(link => {
-                        link.tabIndex = isExpanded ? 0 : -1;
-                    });
-                    return;
-                }
-
-                navMenu.classList.remove('active');
-                navMenu.removeAttribute('aria-hidden');
-                menuLinks.forEach(link => {
-                    link.removeAttribute('tabindex');
-                });
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-            };
-            
-            // Toggle hamburger menu
-            const toggleMenu = function() {
-                const expanded = !hamburger.classList.contains('active');
-                hamburger.classList.toggle('active', expanded);
-                syncMenuAccessibility(expanded);
-            };
-            
-            hamburger.addEventListener('click', toggleMenu);
-            mobileMenuQuery.addEventListener('change', function() {
-                syncMenuAccessibility(false);
-            });
-            syncMenuAccessibility(false);
-            
-            // Close mobile menu when clicking on a link
-            menuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    syncMenuAccessibility(false);
-                });
-            });
-
-            // Observe service cards and other elements for animation
-            const animateElements = document.querySelectorAll('.service-card, .stat, .contact-item');
-            
-            animateElements.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(20px)';
-                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(el);
-            });
-        });
-
-        // Smooth Scrolling for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Combined Scroll Handler for Header and Navigation
-        let lastScrollY = 0;
-        window.addEventListener('scroll', function() {
-            const currentScrollY = window.scrollY;
-            const header = document.getElementById('header');
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            // Update header background
-            if (currentScrollY > 50) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            }
-            
-            // Update active navigation highlighting
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const sectionHeight = section.offsetHeight;
-                
-                if (sectionTop <= 100 && sectionTop + sectionHeight > 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-            
-            lastScrollY = currentScrollY;
-        });
-
-        // Form Validation and Submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            if (!this.reportValidity()) {
-                return;
-            }
-            
-            // Get form data
-            const formData = new FormData(this);
-            const urgency = formData.get('urgency');
-            const name = formData.get('name');
-            const phone = formData.get('phone');
-            const email = formData.get('email');
-            const message = formData.get('message');
-            
-            // Basic validation
-            if (!name || !phone || !email || !urgency || !message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-            
-            // Improved phone validation - requires at least 10 digits, allows common formats
-            const phoneDigits = phone.replace(/\D/g, '');
-            if (phoneDigits.length < 10) {
-                alert('Please enter a valid phone number with at least 10 digits.');
-                return;
-            }
-            
-            // Handle emergency requests
-            if (urgency === 'emergency') {
-                const confirmEmergency = confirm(
-                    'EMERGENCY REQUEST DETECTED!\n\n' +
-                    'This form will be submitted for immediate emergency response.\n' +
-                    'Our team will contact you using the information provided.\n\n' +
-                    'Would you like to continue submitting this emergency request?'
-                );
-                
-                if (!confirmEmergency) {
-                    return;
-                }
-            }
-            
-            // Simulate form submission
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-            submitButton.setAttribute('aria-busy', 'true');
-            
-            // Simulate API call
-            setTimeout(() => {
-                alert('Thank you for your request! We will contact you shortly.');
-                this.reset();
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-                submitButton.removeAttribute('aria-busy');
-                
-                // For emergency requests, show additional instructions
-                if (urgency === 'emergency') {
-                    setTimeout(() => {
-                        alert('Emergency request logged. Please ensure you have also contacted emergency services (911) if applicable.');
-                    }, 500);
-                }
-            }, 2000);
-        });
-
-        // Add active class style for navigation
-        const style = document.createElement('style');
-        style.textContent = `
-            .nav-link.active {
-                color: #007bff !important;
-                background: rgba(0, 123, 255, 0.1);
-            }
-            
-            .hamburger.active span:nth-child(1) {
-                transform: rotate(-45deg) translate(-5px, 6px);
-            }
-            
-            .hamburger.active span:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .hamburger.active span:nth-child(3) {
-                transform: rotate(45deg) translate(-5px, -6px);
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Intersection Observer for Animation on Scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe service cards and other elements for animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const animateElements = document.querySelectorAll('.service-card, .stat, .contact-item');
-            
-            animateElements.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(20px)';
-                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(el);
-            });
-        });
-
-        // Emergency contact click tracking
-        document.querySelectorAll('.emergency-number, .emergency-btn').forEach(element => {
-            element.addEventListener('click', function() {
-                // Track emergency contact attempts
-                console.log('Emergency contact initiated:', new Date().toISOString());
-            });
-        });
-
-        // Testimonials Carousel
-        let currentTestimonial = 0;
-        const testimonials = document.querySelectorAll('.testimonial-card');
-        const dots = document.querySelectorAll('.testimonial-dot');
-        const TESTIMONIAL_ROTATION_INTERVAL_MS = 7000;
-
-        function showTestimonial(index) {
-            testimonials.forEach((card, i) => {
-                card.classList.remove('active');
-                if (i === index) {
-                    card.classList.add('active');
-                }
-            });
-            
-            dots.forEach((dot, i) => {
-                dot.classList.remove('active');
-                if (i === index) {
-                    dot.classList.add('active');
-                }
-            });
-        }
-
-        function nextTestimonial() {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }
-
-        function previousTestimonial() {
-            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }
-
-        function goToTestimonial(index) {
-            currentTestimonial = index;
-            showTestimonial(currentTestimonial);
-        }
-
-        // Auto-rotate testimonials
-        setInterval(nextTestimonial, TESTIMONIAL_ROTATION_INTERVAL_MS);
-
-        // Scroll Progress Indicator
-        window.addEventListener('scroll', function() {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            
-            let progressBar = document.querySelector('.scroll-progress');
-            if (!progressBar) {
-                progressBar = document.createElement('div');
-                progressBar.className = 'scroll-progress';
-                document.body.appendChild(progressBar);
-            }
-            progressBar.style.width = scrolled + '%';
-        });
-
-        // Cookie Consent - Initialize after DOM is loaded
-        const COOKIE_CONSENT_DELAY_MS = 2000;
-        
-        // Check if user has already accepted cookies
-        if (!localStorage.getItem('cookiesAccepted')) {
-            setTimeout(() => {
-                const cookieConsent = document.querySelector('.cookie-consent');
-                if (cookieConsent) {
-                    cookieConsent.classList.add('show');
-                }
-            }, COOKIE_CONSENT_DELAY_MS);
-        }
-        
-        // Add event listeners for cookie buttons
-        const acceptBtn = document.getElementById('acceptCookies');
-        const declineBtn = document.getElementById('declineCookies');
-        
-        if (acceptBtn) {
-            acceptBtn.addEventListener('click', function() {
-                localStorage.setItem('cookiesAccepted', 'true');
-                const cookieConsent = document.querySelector('.cookie-consent');
-                if (cookieConsent) {
-                    cookieConsent.classList.remove('show');
-                }
-            });
-        }
-        
-        if (declineBtn) {
-            declineBtn.addEventListener('click', function() {
-                const cookieConsent = document.querySelector('.cookie-consent');
-                if (cookieConsent) {
-                    cookieConsent.classList.remove('show');
-                }
-            });
-        }
-    </script>
-
-    <!-- Cookie Consent Notice -->
-    <div class="cookie-consent">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <h4><i class="fas fa-cookie-bite"></i> Cookie Notice</h4>
-                <p>We use cookies to enhance your experience and analyze site usage. By continuing to browse, you agree to our use of cookies.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-5">
+                    <div class="footer-brand">
+                        <div class="brand-mark brand-mark--footer">
+                            <span class="brand-mark__icon"><i class="fas fa-helicopter" aria-hidden="true"></i></span>
+                            <span>
+                                <strong>3 Bladez</strong>
+                                <small>Independent SAR Drone Support</small>
+                            </span>
+                        </div>
+                        <p>Premium presentation for a serious mission: aerial support, search visibility, documentation, and operational trust signals in one experience.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Navigate</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Capabilities</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#trust">Trust</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h3>Operations</h3>
+                    <ul class="footer-details">
+                        <li><a href="tel:+18003252337">1-800-325-2337</a></li>
+                        <li><a href="mailto:operations@3bladez.com">operations@3bladez.com</a></li>
+                        <li>Texas-based support with regional deployment by request</li>
+                    </ul>
+                </div>
             </div>
-            <div class="cookie-buttons">
-                <button class="cookie-btn accept" id="acceptCookies">Accept</button>
-                <button class="cookie-btn decline" id="declineCookies">Decline</button>
+            <div class="footer-bottom">
+                <p>&copy; 2026 3 Bladez. All rights reserved. Independent technology support provider for public safety partners.</p>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const revealTargets = document.querySelectorAll('[data-reveal]');
+        const progressBar = document.querySelector('.scroll-progress');
+        const siteHeader = document.getElementById('header');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.16, rootMargin: '0px 0px -10% 0px' });
+
+        revealTargets.forEach((target) => revealObserver.observe(target));
+
+        const updateScrollState = () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+
+            progressBar.style.width = `${scrolled}%`;
+            siteHeader.classList.toggle('is-scrolled', winScroll > 24);
+        };
+
+        updateScrollState();
+        window.addEventListener('scroll', updateScrollState, { passive: true });
+    </script>
 </body>
 </html>
