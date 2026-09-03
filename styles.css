@@ -583,6 +583,53 @@ a {
     text-align: center;
 }
 
+.identity-banner {
+    padding: 1.75rem 0;
+    background: linear-gradient(135deg, #fff2e4, #ffe3cb);
+    border-top: 1px solid rgba(15, 39, 66, 0.08);
+    border-bottom: 1px solid rgba(15, 39, 66, 0.08);
+}
+
+.identity-banner__inner {
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.6rem;
+    text-align: center;
+}
+
+.identity-banner__statement {
+    margin: 0;
+    color: var(--ink);
+    font-size: 1.02rem;
+    line-height: 1.55;
+}
+
+.identity-banner__emergency {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-weight: 700;
+    color: var(--accent-strong);
+}
+
+.footer-disclosure {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.footer-disclosure i {
+    color: var(--accent);
+    margin-top: 0.2rem;
+}
+
 .roadmap-card {
     min-height: 100%;
 }
