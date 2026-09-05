@@ -68,7 +68,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="primary-navigation">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link" href="#services">Capabilities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Research Areas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#trust">Trust</a></li>
@@ -89,7 +89,7 @@
                         <h1 class="hero-title" data-reveal>Modern aerial intelligence for teams that cannot afford blind spots.</h1>
                         <p class="hero-copy" data-reveal>3 Bladez equips search and rescue organizations with thermal visibility, aerial mapping, and mission-ready documentation. We support official responders with disciplined drone operations and a presentation that reflects that seriousness.</p>
                         <div class="hero-actions d-flex flex-wrap gap-3" data-reveal>
-                            <a class="btn btn-accent btn-lg" href="#services">Explore Capabilities</a>
+                            <a class="btn btn-accent btn-lg" href="#services">Explore Research Areas</a>
                             <a class="btn btn-outline-light btn-lg" href="#trust">See Trust Signals</a>
                         </div>
                         <div class="trust-strip" data-reveal>
@@ -168,44 +168,92 @@
         <section class="section-shell" id="services">
             <div class="container">
                 <div class="section-heading text-center" data-reveal>
-                    <span class="eyebrow eyebrow--dark">Capabilities</span>
-                    <h2>Built for terrain, time pressure, and command clarity.</h2>
-                    <p>The platform is designed to feel dependable at first glance and useful under pressure, with every section presenting capability in a cleaner and more confident way.</p>
+                    <span class="eyebrow eyebrow--dark">Research Areas</span>
+                    <h2>Research built around real terrain, real conditions, and real problems.</h2>
+                    <p>Each area below targets a specific open problem in SAR drone technology. These are research and evaluation activities, not services available during a live incident.</p>
                 </div>
                 <div class="row g-4 mt-2">
                     <div class="col-md-6 col-xl-4" data-reveal>
                         <article class="feature-card h-100 lift-card">
-                            <div class="feature-card__icon"><i class="fas fa-search-location" aria-hidden="true"></i></div>
-                            <h3>Search Coverage Support</h3>
-                            <p>Thermal and optical visibility for organized search patterns across dense, remote, or low-light terrain.</p>
+                            <div class="feature-card__icon"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+                            <h3>Applied SAR-Drone Research</h3>
+                            <p>Studying how drone-based sensing and mapping can improve search-and-rescue outcomes, using data from our own test flights rather than assumptions.</p>
                             <ul class="feature-list">
-                                <li>Thermal target spotting</li>
-                                <li>High-resolution optical review</li>
-                                <li>Georeferenced search passes</li>
+                                <li>Structured field data collection</li>
+                                <li>Comparative technology studies</li>
+                                <li>Findings shared with SAR partners</li>
                             </ul>
                         </article>
                     </div>
                     <div class="col-md-6 col-xl-4" data-reveal>
                         <article class="feature-card h-100 lift-card">
-                            <div class="feature-card__icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
-                            <h3>Incident Mapping</h3>
-                            <p>Command-friendly aerial views that help teams assess terrain, hazards, access lanes, and probable search zones.</p>
+                            <div class="feature-card__icon"><i class="fas fa-drafting-compass" aria-hidden="true"></i></div>
+                            <h3>Prototype Development</h3>
+                            <p>Building and iterating on hardware and software concepts well before they would be considered ready for field deployment.</p>
                             <ul class="feature-list">
-                                <li>Rapid aerial mapping</li>
-                                <li>Live visual context</li>
-                                <li>Documentation-ready exports</li>
+                                <li>Rapid prototyping cycles</li>
+                                <li>Bench and controlled-environment testing</li>
+                                <li>Iterative design reviews</li>
                             </ul>
                         </article>
                     </div>
                     <div class="col-md-6 col-xl-4" data-reveal>
                         <article class="feature-card h-100 lift-card">
-                            <div class="feature-card__icon"><i class="fas fa-broadcast-tower" aria-hidden="true"></i></div>
-                            <h3>Field Coordination Support</h3>
-                            <p>Structured handoff between air support, team leads, and post-mission review so operations stay consistent.</p>
+                            <div class="feature-card__icon"><i class="fas fa-satellite" aria-hidden="true"></i></div>
+                            <h3>Sensor &amp; Payload Evaluation</h3>
+                            <p>Testing thermal, optical, and mapping payloads to understand their strengths and limitations across different terrain and light conditions.</p>
                             <ul class="feature-list">
-                                <li>Mission logs and summaries</li>
-                                <li>Responder-friendly outputs</li>
-                                <li>Communication relay planning</li>
+                                <li>Thermal and optical benchmarking</li>
+                                <li>Payload endurance testing</li>
+                                <li>Comparative performance data</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-tower-broadcast" aria-hidden="true"></i></div>
+                            <h3>Communications Resilience</h3>
+                            <p>Researching how drone links hold up in degraded, remote, or beyond-visual-line-of-sight conditions, and where they currently fall short.</p>
+                            <ul class="feature-list">
+                                <li>BVLOS link testing</li>
+                                <li>Signal-loss recovery research</li>
+                                <li>Redundancy and failover studies</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-display" aria-hidden="true"></i></div>
+                            <h3>Human-Machine Interface Research</h3>
+                            <p>Evaluating how operators interpret and act on drone-collected data under time pressure, to inform better interface design.</p>
+                            <ul class="feature-list">
+                                <li>Interface usability studies</li>
+                                <li>Cognitive-load evaluation</li>
+                                <li>Operator feedback loops</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
+                            <h3>Field-Informed Testing</h3>
+                            <p>Running controlled test flights across varied terrain so research stays grounded in realistic conditions rather than lab assumptions.</p>
+                            <ul class="feature-list">
+                                <li>Terrain-based test flights</li>
+                                <li>Environmental condition logging</li>
+                                <li>Results reviewed against real scenarios</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4 mx-md-auto" data-reveal>
+                        <article class="feature-card h-100 lift-card">
+                            <div class="feature-card__icon"><i class="fas fa-file-lines" aria-hidden="true"></i></div>
+                            <h3>Standards &amp; Technical Documentation</h3>
+                            <p>Documenting methods, results, and specifications so findings can inform future equipment choices and industry practice.</p>
+                            <ul class="feature-list">
+                                <li>Technical specification writeups</li>
+                                <li>Test methodology documentation</li>
+                                <li>Published findings for partner review</li>
                             </ul>
                         </article>
                     </div>
@@ -369,7 +417,7 @@
                     <div class="col-md-6 col-xl-4" data-reveal>
                         <article class="roadmap-card lift-card h-100">
                             <h3>Endurance &amp; Payload</h3>
-                            <p>Longer-duration flight targets and mission-approved payload options that expand what support teams can stage.</p>
+                            <p>Testing longer-duration flight profiles and payload configurations to understand what's feasible today versus what still requires further development.</p>
                         </article>
                     </div>
                     <div class="col-md-6 col-xl-4" data-reveal>
@@ -381,13 +429,13 @@
                     <div class="col-md-6 col-xl-4" data-reveal>
                         <article class="roadmap-card lift-card h-100">
                             <h3>Connectivity</h3>
-                            <p>Stronger beyond-visual-line-of-sight communication pathways and more reliable command-facing streaming.</p>
+                            <p>Researching beyond-visual-line-of-sight communication resilience and data-streaming reliability under degraded conditions.</p>
                         </article>
                     </div>
                     <div class="col-md-6 col-xl-4" data-reveal>
                         <article class="roadmap-card lift-card h-100">
                             <h3>Rugged Platforms</h3>
-                            <p>Weather-resistant and modular platform concepts for mountainous, maritime, urban, and rural missions.</p>
+                            <p>Evaluating weather-resistant and modular platform concepts across mountainous, maritime, urban, and rural test terrain.</p>
                         </article>
                     </div>
                     <div class="col-md-6 col-xl-4" data-reveal>
@@ -461,7 +509,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <h3>Navigate</h3>
                     <ul class="footer-links">
-                        <li><a href="#services">Capabilities</a></li>
+                        <li><a href="#services">Research Areas</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#trust">Trust</a></li>
